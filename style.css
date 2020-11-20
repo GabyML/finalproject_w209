@@ -1,27 +1,41 @@
 html {
   background: #fffdf5;
 }
+
+
 h1 {
   font-family: "Courier New";
-  font-size: 225px;
+  font-size: 150%;
   border: 8px solid #e8bd10;
   padding: 30px;
   display: inline-block;
   margin: 75px;
   background: #fffdf5;
 }
+
+h2 {
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 142px;
+  font-style: italic;
+  line-height: 20;
+  /* background: #fffdf5; */
+}
+
 p {
   text-align: center;
   font-family: "Courier New";
-  font-size: 42px;
+  /* font-size: 42px; */
   font-style: italic;
-  background: #fffdf5;
+  /* background: #fffdf5; */
 }
+
+
 select {
   width: 300px;
 }
 .filler {
-  height: 20rem;
+  height: 15rem;
   text-align: center;
 }
 #scrolly-side .scrolly {
@@ -86,4 +100,12 @@ select {
   -webkit-transition: width 1s ease-in-out;
   transition: width 1s ease-in-out;
   background-color: #daa520;
+}
+
+[data-index='0'] {
+  font-size: 42px;
+}
+
+[data-index='1'] {
+  font-size: 140px;
 }
