@@ -5,12 +5,19 @@ html {
 
 h1 {
   font-family: "Courier New";
-  font-size: 150%;
+  font-size: 350%;
   border: 8px solid #e8bd10;
-  padding: 30px; 
+  padding: 30px;
   display: inline-block;
   /* margin: 75px; */
   background: #fffdf5;
+}
+
+h2 {
+  font-family: "Courier New";
+  font-size: 200%;
+  display: inline-block;
+  /* margin: 75px; */
 }
 
 .question {
@@ -34,7 +41,7 @@ p {
 
 .q1choice {
     margin-left: 100px;
-    
+
 }
 
 .person_div {
@@ -50,4 +57,3 @@ p {
 
   background-color: blue;
 }
-
