@@ -2,24 +2,33 @@ html {
   background: #fffdf5;
 }
 
+div {
+  text-align: center;
+  background: #fffdf5;
+}
+
+br {
+  background: #fffdf5;
+}
 
 h1 {
+  text-align: center;
   font-family: "Courier New";
-  font-size: 150%;
-  border: 8px solid #e8bd10;
-  padding: 30px;
-  display: inline-block;
-  margin: 75px;
+  font-size: 300%;
+  border: 10px solid #e8bd10;
+  padding: 150px;
   background: #fffdf5;
+  display: inline-block;
 }
 
 h2 {
   text-align: center;
   font-family: "Courier New";
-  font-size: 142px;
+  font-size: 150px;
   font-style: italic;
   line-height: 20;
-  /* background: #fffdf5; */
+  background: #fffdf5;
+  background: #fffdf5;
 }
 
 p {
@@ -27,7 +36,7 @@ p {
   font-family: "Courier New";
   /* font-size: 42px; */
   font-style: italic;
-  /* background: #fffdf5; */
+  background: #fffdf5;
 }
 
 
