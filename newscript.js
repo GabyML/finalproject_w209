@@ -1,6 +1,6 @@
-function check_answer(user_answer, correct_answer, result) {
+function check_answer(user_answer, correct_answer, result, choices_class) {
 
-    let choices = document.getElementsByClassName("q1result");
+    let choices = document.getElementsByClassName(choices_class);
 
     for (let i = 0; i < choices.length; i++) {
         choices[i].innerHTML="";

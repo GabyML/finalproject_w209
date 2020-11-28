@@ -1,97 +1,283 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="./newstyle.css">
-<script type = "text/javascript" src = "newscript.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./newstyle.css">
+  <script type="text/javascript" src="newscript.js"></script>
 
 </head>
+
 <body>
 
-      <div style="text-align:center" >
-        <h1>Wealth<br/>Aware</h1>
-      </div>
-
-      <br>
-      <br>
-
-<div class = "question">
-
-  
-
-
-  If the world were a village of 100 people, how many would live without access to clean water?
-
-  <br>
-  <br>
-  <div class = "row">
-    <div class = "col-sm-4">
-
-<input onclick = "check_answer(1, 18, 'q1result1'); show_animation('animation1', false, 18);" class = "q1choice" type = "radio" id = "q1option1" name = "q1" value = "1"> 1
-<span id="q1result1" class="q1result"></span>
-<br>
-<input onclick = "check_answer(18, 18, 'q1result2'); show_animation('animation1', true, 18);" class = "q1choice" type = "radio" id = "q1option2" name = "q1" value = "18"> 18
-<span id="q1result2" class="q1result"></span>
-<br>
-<input onclick = "check_answer(43, 18, 'q1result3'); show_animation('animation1', false, 18);" class = "q1choice" type = "radio" id = "q1option3" name = "q1" value = "43"> 43
-<span id="q1result3" class="q1result"></span>
-<br>
-<input onclick = "check_answer(31, 18, 'q1result4'); show_animation('animation1', false, 18);" class = "q1choice" type = "radio" id = "q1option4" name = "q1" value = "31"> 31
-<span id="q1result4" class="q1result"></span>
-<br>
-<input onclick = "check_answer(78, 18, 'q1result5'); show_animation('animation1', false, 18);" class = "q1choice" type = "radio" id = "q1option5" name = "q1" value = "78"> 78
-<span id="q1result5" class="q1result"></span>
-
-</div>
-<div class = "col-sm-8">
-
-  <div id = "animation1"></div>
-
-
-</div>
+  <div style="text-align:center">
+    <h1>Wealth<br />Aware</h1>
   </div>
-<br>
-<br>
 
-<div class = "row">
-<div class = "col-sm-6">
-  <h3>
-
-    Check out a Story
-  
-  </h3>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/irKmkBI8zhw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-<br>
-<a href="https://www.youtube.com/watch?v=irKmkBI8zhw" target = "_blank">
-Click to view the video
-</a>
-</div>
-<div class = "col-sm-6">
-  <h3>
-
-    Check out a Story
-  
-  </h3>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/irKmkBI8zhw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br>
   <br>
-  <a href="https://public.tableau.com/profile/anil.inamdar#!/vizhome/Lessthan1_9aday_16059930778950/ShareofPoorMain?publish=yes" target = "_blank">
-  Click to view the Dashboard
-  </a>
-</div>
-</div>
+
+  <div class="question">
+    If the world were a village of 100 people, how many would live without access to clean water?
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+
+        <input onclick="check_answer(1, 18, 'q1result1', 'q1result'); show_animation('animation1', false, 18);"
+          class="q1choice" type="radio" id="q1option1" name="q1" value="1"> 1
+        <span id="q1result1" class="q1result"></span>
+        <br>
+        <input onclick="check_answer(18, 18, 'q1result2', 'q1result'); show_animation('animation1', true, 18);"
+          class="q1choice" type="radio" id="q1option2" name="q1" value="18"> 18
+        <span id="q1result2" class="q1result"></span>
+        <br>
+        <input onclick="check_answer(43, 18, 'q1result3', 'q1result'); show_animation('animation1', false, 18);"
+          class="q1choice" type="radio" id="q1option3" name="q1" value="43"> 43
+        <span id="q1result3" class="q1result"></span>
+        <br>
+        <input onclick="check_answer(31, 18, 'q1result4', 'q1result'); show_animation('animation1', false, 18);"
+          class="q1choice" type="radio" id="q1option4" name="q1" value="31"> 31
+        <span id="q1result4" class="q1result"></span>
+        <br>
+        <input onclick="check_answer(78, 18, 'q1result5', 'q1result'); show_animation('animation1', false, 18);"
+          class="q1choice" type="radio" id="q1option5" name="q1" value="78"> 78
+        <span id="q1result5" class="q1result"></span>
+
+      </div>
+      <div class="col-sm-8">
+
+        <div id="animation1"></div>
 
 
+      </div>
+    </div>
+    <br>
 
-</div>
-<script type="text/javascript">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>
 
-  show_animation("animation1", false, 18);
+          Check out a Story
 
-</script>
+        </h3>
+        <iframe width="868" height="488" src="https://www.youtube.com/embed/irKmkBI8zhw" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <br>
+        <br>
+        <div class='tableauPlaceholder' id='viz1606506644766' style='position: relative'><noscript><a href='#'><img
+                alt=' '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wa&#47;water_16056381965010&#47;Waterdasboard2&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='water_16056381965010&#47;Waterdasboard2' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wa&#47;water_16056381965010&#47;Waterdasboard2&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en' />
+            <param name='filter' value='publish=yes' /></object></div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1606506644766');
+          var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '777px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+
+  <!--Question 2-->
+  <div class="question">
+    If the world were a village of 100 people, how many would live on less than $2 a day?
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+
+        <input onclick="check_answer(9, 9, 'q2result1', 'q2result'); show_animation('animation2', true, 9);"
+          class="q2choice" type="radio" id="q2option1" name="q2" value="9"> 9
+        <span id="q2result1" class="q2result"></span>
+        <br>
+        <input onclick="check_answer(68, 9, 'q2result2', 'q2result'); show_animation('animation2', false, 9);"
+          class="q2choice" type="radio" id="q2option2" name="q2" value="68"> 68
+        <span id="q2result2" class="q2result"></span>
+        <br>
+        <input onclick="check_answer(53, 9, 'q2result3', 'q2result'); show_animation('animation2', false, 9);"
+          class="q2choice" type="radio" id="q2option3" name="q2" value="53"> 53
+        <span id="q2result3" class="q2result"></span>
+        <br>
+        <input onclick="check_answer(36, 9, 'q2result4', 'q2result'); show_animation('animation2', false, 9);"
+          class="q2choice" type="radio" id="q2option4" name="q2" value="36"> 36
+        <span id="q2result4" class="q2result"></span>
+        <br>
+        <input onclick="check_answer(84, 9, 'q2result5', 'q2result'); show_animation('animation2', false, 9);"
+          class="q2choice" type="radio" id="q2option5" name="q2" value="84"> 84
+        <span id="q2result5" class="q2result"></span>
+
+      </div>
+      <div class="col-sm-8">
+
+        <div id="animation2"></div>
+
+
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>
+
+          Check out a Story
+
+        </h3>
+        <iframe width="868" height="488" src="https://www.youtube.com/embed/-lkC8FByvAw" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <br>
+        <br>
+
+        <div class='tableauPlaceholder' id='viz1606506602988' style='position: relative'><noscript><a href='#'><img
+                alt=' '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_9aday&#47;ShareofPoorDetails&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='1_9aday&#47;ShareofPoorDetails' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_9aday&#47;ShareofPoorDetails&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en' />
+            <param name='filter' value='publish=yes' /></object></div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1606506602988');
+          var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1227px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--End Question 2-->
+
+
+  <br>
+  <br>
+
+  <!--Question 3-->
+  <div class="question">
+    If the world were a village of 100 people, how many would be hungry or malnourished?
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+
+        <input onclick="check_answer(4, 13, 'q3result1', 'q3result'); show_animation('animation3', false, 13);"
+          class="q3choice" type="radio" id="q3option1" name="q3" value="4"> 4
+        <span id="q3result1" class="q3result"></span>
+        <br>
+        <input onclick="check_answer(52, 13, 'q3result2', 'q3result'); show_animation('animation3', false, 13);"
+          class="q3choice" type="radio" id="q3option2" name="q3" value="52"> 52
+        <span id="q3result2" class="q3result"></span>
+        <br>
+        <input onclick="check_answer(41, 13, 'q3result3', 'q3result'); show_animation('animation3', false, 13);"
+          class="q3choice" type="radio" id="q3option3" name="q3" value="41"> 41
+        <span id="q3result3" class="q3result"></span>
+        <br>
+        <input onclick="check_answer(13, 13, 'q3result4', 'q3result'); show_animation('animation3', true, 13);"
+          class="q3choice" type="radio" id="q3option4" name="q3" value="13"> 13
+        <span id="q3result4" class="q3result"></span>
+        <br>
+        <input onclick="check_answer(60, 13, 'q3result5', 'q3result'); show_animation('animation3', false, 13);"
+          class="q3choice" type="radio" id="q3option5" name="q3" value="60"> 60
+        <span id="q3result5" class="q3result"></span>
+
+      </div>
+      <div class="col-sm-8">
+
+        <div id="animation3"></div>
+
+
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>
+
+          Check out a Story
+
+        </h3>
+        <iframe width="868" height="488" src="https://www.youtube.com/embed/UzbKzVVrFHw" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <br>
+        <br>
+        <!--add dashboard-->
+
+        <div class='tableauPlaceholder' id='viz1606506671492' style='position: relative'><noscript><a href='#'><img
+                alt=' '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hu&#47;hunger_16056385411730&#47;hungerdashboard&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='hunger_16056385411730&#47;hungerdashboard' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hu&#47;hunger_16056385411730&#47;hungerdashboard&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en' />
+            <param name='filter' value='publish=yes' /></object></div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1606506671492');
+          var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+
+  <!--End Question 3-->
+
+  <script type="text/javascript">
+
+    show_animation("animation1", false, 18);
+    show_animation("animation2", false, 9);
+    show_animation("animation3", false, 13);
+
+  </script>
 
 </body>
+
 </html>
