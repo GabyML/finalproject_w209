@@ -44,18 +44,19 @@
 
 <section id='scrolly-side'>
 
+  <!-- <div id='side-vis'></div> -->
+
   <div class='scrolly'>
 
     <!--  step text   -->
 	  <article>
       <div class='step' data-width='10%' data-index='0'>
-          <p>
-            how many would live without access to clean water?
-
-</p>
+          <p style='color:#e8bd10; background-color: transparent;'>
+            How many would live without access to clean water?
+          </p>
       </div>
       <div class='step' data-width='90%' data-index='1'>
-         <p>8</p>
+         <p style='color:#e8bd10; background-color: transparent;'>8</p>
       </div>
 
 	  </article>
@@ -77,9 +78,19 @@
   </p>
 </section>
 <!-- partial -->
-  <script src='https://unpkg.com/d3@5.4.0/dist/d3.min.js'></script>
+<script src='https://unpkg.com/d3@5.4.0/dist/d3.min.js'></script>
 <script src='https://unpkg.com/enter-view@1.0.0/enter-view.min.js'></script>
 <script src='https://unpkg.com/stickyfilljs@2.0.5/dist/stickyfill.js'></script><script  src="./script2.js"></script>
+
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
 
 </body>
 </html>

@@ -1,31 +1,3 @@
-var dataset = [1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-
-var svg = d3.select("body")
-            .append("svg")
-            .attr("width", 5000)
-            .attr("height", 1000);
-
-var circles = svg.selectAll("circle")
-                 .data(dataset)
-                 .enter()
-                 .append("circle");
-
- circles.attr("cx", function(d, i) { return i*5 + 50 ;})
-        .attr("cy", function(d, i) { return ((i%5)*25 + 100);})
-        .attr("r", 10)
-        .attr("fill", function(d, i) {
-          if (d == 1) {
-            return 'steelblue';
-
-          // If the letter is anything else
-          } else {
-            return 'orange';
-          }
-
-          }
-          );
-
-
 
 const container = d3.select('#scrolly-side');
 const stepSel = container.selectAll('.step');

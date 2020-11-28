@@ -4,7 +4,7 @@ html {
 
 div {
   text-align: center;
-  background: #fffdf5;
+  background: #e8bd10;
 }
 
 br {
@@ -51,7 +51,7 @@ select {
   display: -webkit-box;
   display: flex;
   max-width: 60rem;
-  margin: 3rem auto;
+  margin: 1rem auto;
   background-color: #f4f4f4;
   padding: 1rem;
 }
@@ -117,4 +117,9 @@ select {
 
 [data-index='1'] {
   font-size: 140px;
+}
+
+#top-vis{
+  position: fixed;
+  left: 0px;
 }
