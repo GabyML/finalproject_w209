@@ -14,11 +14,12 @@ br {
 h1 {
   text-align: center;
   font-family: "Courier New";
-  font-size: 75px;
+  font-size: 50px;
   border: 10px solid #e8bd10;
-  padding: 100px;
+  padding: 30px;
   background: #fffdf5;
   display: inline-block;
+  line-height: 5;
 }
 
 h2 {
@@ -26,7 +27,7 @@ h2 {
   font-family: "Courier New";
   font-size: 40px;
   font-style: italic;
-  line-height: 20;
+  line-height: 2;
   background: #fffdf5;
 }
 
@@ -114,13 +115,13 @@ select {
   text-align: center;
   padding: 1rem;
   position: absolute;
-  top: 90%;
-  left: 90%;
-  -moz-transform: translate(-90%, -90%);
-  -webkit-transform: translate(-90%, -90%);
-  transform: translate(-90%, -90%);
-  font-size: 8rem;
-  font-weight: 900;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 500;
   color: #666;
 }
 
@@ -153,7 +154,7 @@ select {
 
 .tableauPlaceholder{
   max-width: 200rem;
-  left: 25rem;
+  left: 10rem;
 }
 
 iframe{
