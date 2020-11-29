@@ -29,6 +29,8 @@ h2 {
   /* line-height: 20; */
   /* background: #fffdf5; */
   padding-left: 30px;
+  border-bottom: 5px solid black;
+  padding-bottom: 50px;
 }
 
 p {
@@ -39,7 +41,7 @@ p {
   /* background: #fffdf5; */
 }
 
-.q1choice {
+.q1choice, .q2choice, .q3choice {
     margin-left: 100px;
 
 }
