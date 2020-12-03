@@ -1,0 +1,163 @@
+html {
+  background: #fffdf5;
+}
+
+div {
+  text-align: center;
+  background: #fffdf5;
+}
+
+br {
+  background: #fffdf5;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 50px;
+  border: 10px solid #e8bd10;
+  padding: 30px;
+  background: #fffdf5;
+  display: inline-block;
+  line-height: 5;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 40px;
+  font-style: italic;
+  line-height: 2;
+  background: #fffdf5;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 30px;
+  /* line-height: 20; */
+  background: #fffdf5;
+  margin: 5rem;
+}
+
+p {
+  text-align: center;
+  font-family: "Courier New";
+  font-style: italic;
+  background: #fffdf5;
+}
+
+
+select {
+  width: 300px;
+}
+
+
+#intro {
+  max-width: 40rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.intro__overline {
+  font-size: 1.4rem;
+}
+
+.intro__hed {
+  font-size: 1.4rem;
+  margin: 1.5rem auto;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.intro__dek {
+  font-size: 1.4rem;
+}
+
+/* demo */
+#intro {
+  margin-bottom: 320px;
+}
+
+#outro {
+  height: 640px;
+}
+
+/* scrollama */
+#scroll {
+  position: relative;
+  border-top: 2px dashed #000;
+  border-bottom: 2px dashed #000;
+}
+
+#scroll2 {
+  position: relative;
+  border-top: 2px dashed #000;
+  border-bottom: 2px dashed #000;
+}
+
+.scroll__graphic {
+  position: -webkit-sticky;
+  position: sticky;
+  float: right;
+  top: 2;
+  right: 2rem;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  background-color: #fffdf5;
+  border: 1px solid #000;
+}
+
+
+.scroll__graphic p {
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 500;
+  color: #666;
+}
+
+
+.scroll__text {
+  position: relative;
+  padding: 1rem;
+  max-width: 30rem;
+  width: 33%;
+}
+
+.step {
+  margin: 0 auto 2rem auto;
+  border: 1px solid #333;
+}
+
+.step:last-child {
+  border-bottom: 1px solid #333;
+}
+
+.step.is-active {
+  background-color: #e8bd10;
+}
+
+.step p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.tableauPlaceholder{
+  max-width: 200rem;
+  left: 10rem;
+}
+
+iframe{
+  position: relative;
+  left: 10px;
+}
