@@ -239,3 +239,5 @@ function update(answer, stepColor){
 
 		// kick things off
 		init();
+
+
