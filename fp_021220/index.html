@@ -7,7 +7,7 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -129,7 +129,7 @@
       <br><br>
       <div class="row">
         <div class="col-sm-5">
-  
+
           <input onclick="check_answer(9, 9, 'q2result1', 'q2result'); show_animation('animation2', true, 9);"
             class="q2choice" type="radio" id="q2option1" name="q2" value="9"> 9
           <span id="q2result1" class="q2result"></span>
@@ -149,12 +149,12 @@
           <input onclick="check_answer(84, 9, 'q2result5', 'q2result'); show_animation('animation2', false, 9);"
             class="q2choice" type="radio" id="q2option5" name="q2" value="84"> 84
           <span id="q2result5" class="q2result"></span>
-  
+
         </div>
         <div class="col-sm-7">
-  
+
           <div id="animation2"></div>
-  
+
         </div>
       </div>
     </div>
@@ -166,7 +166,7 @@
       <br><br>
       <div class="row">
         <div class="col-sm-5">
-  
+
           <input onclick="check_answer(4, 13, 'q3result1', 'q3result'); show_animation('animation3', false, 13);"
             class="q3choice" type="radio" id="q3option1" name="q3" value="4"> 4
           <span id="q3result1" class="q3result"></span>
@@ -186,13 +186,87 @@
           <input onclick="check_answer(60, 13, 'q3result5', 'q3result'); show_animation('animation3', false, 13);"
             class="q3choice" type="radio" id="q3option5" name="q3" value="60"> 60
           <span id="q3result5" class="q3result"></span>
-  
+
         </div>
         <div class="col-sm-7">
-  
+
           <div id="animation3"></div>
-  
-  
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+
+    <div class="question">
+      If the world were a village of 100 people, how many would have a high school education or its equivalent?
+      <br><br>
+      <div class="row">
+        <div class="col-sm-5">
+
+          <input onclick="check_answer(3, 7, 'q4result1', 'q4result'); show_animation('animation4', false, 7);"
+            class="q4choice" type="radio" id="q4option1" name="q4" value="3"> 3
+          <span id="q4result1" class="q4result"></span>
+          <br>
+          <input onclick="check_answer(12, 7, 'q4result2', 'q4result'); show_animation('animation4', false, 7);"
+            class="q4choice" type="radio" id="q4option2" name="q4" value="12"> 12
+          <span id="q4result2" class="q4result"></span>
+          <br>
+          <input onclick="check_answer(36, 7, 'q4result3', 'q4result'); show_animation('animation4', false, 7);"
+            class="q4choice" type="radio" id="q4option3" name="q4" value="36"> 36
+          <span id="q4result3" class="q4result"></span>
+          <br>
+          <input onclick="check_answer(7, 7, 'q4result4', 'q4result'); show_animation('animation4', true, 7);"
+            class="q4choice" type="radio" id="q4option4" name="q4" value="7"> 7
+          <span id="q4result4" class="q4result"></span>
+          <br>
+          <input onclick="check_answer(62, 7, 'q4result5', 'q4result'); show_animation('animation4', false, 7);"
+            class="q4choice" type="radio" id="q4option5" name="q4" value="62"> 62
+          <span id="q4result5" class="q4result"></span>
+
+        </div>
+        <div class="col-sm-7">
+
+          <div id="animation4"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+
+    <div class="question">
+      If the world were a village of 100 people, how many would have a bank account?
+      <br><br>
+      <div class="row">
+        <div class="col-sm-5">
+
+          <input onclick="check_answer(8, 30, 'q5result1', 'q5result'); show_animation('animation5', false, 30);"
+            class="q5choice" type="radio" id="q5option1" name="q5" value="8"> 8
+          <span id="q5result1" class="q5result"></span>
+          <br>
+          <input onclick="check_answer(24, 30, 'q5result2', 'q5result'); show_animation('animation5', false, 30);"
+            class="q5choice" type="radio" id="q5option2" name="q5" value="24"> 24
+          <span id="q5result2" class="q5result"></span>
+          <br>
+          <input onclick="check_answer(72, 30, 'q5result3', 'q5result'); show_animation('animation5', false, 30);"
+            class="q5choice" type="radio" id="q5option3" name="q5" value="72"> 72
+          <span id="q5result3" class="q5result"></span>
+          <br>
+          <input onclick="check_answer(12, 30, 'q5result4', 'q5result'); show_animation('animation5', false, 30);"
+            class="q5choice" type="radio" id="q5option4" name="q5" value="12"> 12
+          <span id="q5result4" class="q5result"></span>
+          <br>
+          <input onclick="check_answer(30, 30, 'q5result5', 'q5result'); show_animation('animation5', true, 30);"
+            class="q5choice" type="radio" id="q5option5" name="q5" value="30"> 30
+          <span id="q5result5" class="q5result"></span>
+
+        </div>
+        <div class="col-sm-7">
+
+          <div id="animation5"></div>
+
         </div>
       </div>
     </div>
@@ -346,6 +420,8 @@
     show_animation("animation1", false, 18);
     show_animation("animation2", false, 9);
     show_animation("animation3", false, 13);
+    show_animation("animation4", false, 7);
+    show_animation("animation5", false, 7);
 
   </script>
 
