@@ -1,9 +1,11 @@
 html {
   background: #fffdf5;
 }
+body {
+  text-align: center;
+}
 
 div {
-  text-align: center;
   background: #fffdf5;
 }
 
@@ -160,4 +162,42 @@ select {
 iframe{
   position: relative;
   left: 10px;
+}
+
+.question {
+  text-align: left !important; 
+  font-family: "Courier New";
+  font-size: 2.0em;
+  font-weight: bold;
+  font-style: italic; 
+  /* line-height: 20; */
+  /* background: #fffdf5; */
+  padding-left: 30px;
+  border-bottom: 5px solid black;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.q1choice, .q2choice, .q3choice, .q4choice, .q5choice {
+    margin-left: 100px;
+    
+}
+
+.person_div {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.filled {
+
+  background-color: blue;
+}
+
+.person {
+  width: 12px;
+  margin-right: 10px;
 }
