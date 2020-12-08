@@ -47,6 +47,15 @@ h3 {
   margin-left: 15rem;
   margin-right: 15rem;
 }
+h4 {
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 20px;
+  /* line-height: 20; */
+  background: #fffdf5;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
 
 p {
   text-align: center;
