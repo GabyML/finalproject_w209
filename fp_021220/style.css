@@ -207,3 +207,36 @@ iframe{
   width: 12px;
   margin-right: 10px;
 }
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #e8bd10;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Courier New";
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #E8A005;
+  color: #fffdf5;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
