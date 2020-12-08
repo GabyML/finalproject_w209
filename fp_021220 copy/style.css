@@ -1,0 +1,252 @@
+html {
+  background: #fffdf5;
+}
+body {
+  text-align: center;
+  background: #fffdf5;
+}
+
+div {
+  background: #fffdf5;
+}
+
+br {
+  background: transparent;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 50px;
+  border: 10px solid #e8bd10;
+  padding: 30px;
+  background: #fffdf5;
+  display: inline-block;
+  line-height: 5;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 40px;
+  font-style: italic;
+  line-height: 2;
+  background: #fffdf5;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 30px;
+  /* line-height: 20; */
+  background: #fffdf5;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+h4 {
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 20px;
+  /* line-height: 20; */
+  background: #fffdf5;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+p {
+  text-align: center;
+  font-family: "Courier New";
+  font-style: italic;
+  background: #fffdf5;
+}
+
+
+select {
+  width: 300px;
+}
+
+
+#intro {
+  max-width: 40rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.intro__overline {
+  font-size: 1.4rem;
+}
+
+.intro__hed {
+  font-size: 1.4rem;
+  margin: 1.5rem auto;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.intro__dek {
+  font-size: 1.4rem;
+}
+
+/* demo */
+#intro {
+  margin-bottom: 320px;
+}
+
+#outro {
+  height: 640px;
+}
+
+/* scrollama */
+#scroll {
+  position: relative;
+  border-top: 2px dashed #000;
+  border-bottom: 2px dashed #000;
+}
+
+#scroll2 {
+  position: relative;
+  border-top: 2px dashed #000;
+  border-bottom: 2px dashed #000;
+}
+
+.scroll__graphic {
+  position: -webkit-sticky;
+  position: sticky;
+  float: right;
+  top: 2;
+  right: 2rem;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  background-color: #fffdf5;
+  border: 1px solid #000;
+}
+
+
+.scroll__graphic p {
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 500;
+  color: #666;
+}
+
+
+.scroll__text {
+  position: relative;
+  padding: 1rem;
+  max-width: 30rem;
+  width: 33%;
+}
+
+.step {
+  margin: 0 auto 2rem auto;
+  border: 1px solid #333;
+}
+
+.step:last-child {
+  border-bottom: 1px solid #333;
+}
+
+.step.is-active {
+  background-color: #e8bd10;
+}
+
+.step p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.tableauPlaceholder{
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+iframe{
+  position: relative;
+  left: 10px;
+}
+
+.question {
+  text-align: left !important;
+  font-family: "Courier New";
+  font-size: 2.0em;
+  font-weight: bold;
+  font-style: italic;
+  /* line-height: 20; */
+  /* background: #fffdf5; */
+  padding-left: 30px;
+  border-bottom: 5px solid black;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.q1choice, .q2choice, .q3choice, .q4choice, .q5choice {
+    margin-left: 100px;
+
+}
+
+.person_div {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.filled {
+
+  background-color: blue;
+}
+
+.person {
+  width: 12px;
+  margin-right: 10px;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #e8bd10;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Courier New";
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #E8A005;
+  color: #fffdf5;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
