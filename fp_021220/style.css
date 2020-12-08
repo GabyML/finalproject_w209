@@ -170,8 +170,9 @@ select {
 }
 
 .tableauPlaceholder{
-  max-width: 200rem;
-  left: 10rem;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
 }
 
 iframe{
