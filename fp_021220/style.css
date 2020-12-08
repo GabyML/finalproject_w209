@@ -31,10 +31,11 @@ h2 {
   font-size: 40px;
   font-style: italic;
   line-height: 2;
-  margin: 2rem;
   background: #fffdf5;
   margin-left: 10rem;
   margin-right: 10rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 h3 {
@@ -43,7 +44,6 @@ h3 {
   font-size: 30px;
   /* line-height: 20; */
   background: #fffdf5;
-  margin: 10rem;
   margin-left: 15rem;
   margin-right: 15rem;
 }
