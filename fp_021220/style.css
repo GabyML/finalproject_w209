@@ -30,6 +30,7 @@ h2 {
   font-size: 40px;
   font-style: italic;
   line-height: 2;
+  margin: 2rem;
   background: #fffdf5;
 }
 
@@ -165,11 +166,11 @@ iframe{
 }
 
 .question {
-  text-align: left !important; 
+  text-align: left !important;
   font-family: "Courier New";
   font-size: 2.0em;
   font-weight: bold;
-  font-style: italic; 
+  font-style: italic;
   /* line-height: 20; */
   /* background: #fffdf5; */
   padding-left: 30px;
@@ -180,7 +181,7 @@ iframe{
 
 .q1choice, .q2choice, .q3choice, .q4choice, .q5choice {
     margin-left: 100px;
-    
+
 }
 
 .person_div {
