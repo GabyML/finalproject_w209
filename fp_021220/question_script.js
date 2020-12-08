@@ -15,6 +15,10 @@ function check_answer(user_answer, correct_answer, result, choices_class) {
 
 }
 
+var image
+image.style.width = '50%';
+image.style.height = 'auto'
+
 function show_animation(animation_div_id, fill, correct_answer) {
     let animation_div = document.getElementById(animation_div_id);
     animation_div.innerHTML="";
@@ -36,12 +40,14 @@ function show_animation(animation_div_id, fill, correct_answer) {
         if (i < correct_answer && fill==true) {
             person_img.src="gold.png";
             person_img.alt="gold person";
+
         }
         else {
             person_img.src="black.png";
             person_img.alt="black person";
         }
-        
+
+
         animation_div.appendChild(person_img);
 
     }
