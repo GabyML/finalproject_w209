@@ -1,30 +1,93 @@
-var answer = 0;
+var width = 900;
+var height = 400;
+var answer = 15;
 var i;
 
 var dataset = []
 
 for (i = 0; i < 100; i++) {
-	if(i < answer) { var group = 1;}
-	else {var group = 2;}
-	dataset.push({r: 10, group: group})}
-
+if(i < answer) { var group = 1;}
+else {var group = 2;}
+dataset.push({r: 10, group: group})}
 
 const svg = d3.select("#side-vis")
-            .append("svg")
-            .attr("width", "100%")
-            .attr("height", "100%");
+  .append("svg")
+    .attr("width", width)
+    .attr("height", height),
+		yScale = d3.scalePoint()
+			.domain([0,100])
+			.range([70, height]),
+  xScale = d3.scalePoint()
+    .range([0, width]);
 
-var circles = svg.selectAll("circle")
-                 .data(dataset)
-                 .enter()
-                 .append("circle");
+// var circles = svg.selectAll("circle")
+//                .data(dataset)
+//                .enter()
+//                .append("circle");
+//
+// circles.attr("cx", function(d, i) { return i*5 + 50 ;})
+//       .attr("cy", function(d, i) { return ((i%5)*25 + 100);})
+//       .attr("r", 10)
+//       .attr("fill", function(d, i) {
+// 				if(i < answer) { return 'golden'}
+// 				else {return 'black'}});
 
- circles.attr("cx", function(d, i) { return i*5 + 50 ;})
-        .attr("cy", function(d, i) { return ((i%5)*25 + 100);})
-        .attr("r", 10)
-        .attr("fill", function(d, i) {
-					if(i < answer) { return '#808080'}
-					else {return '#00BFFF'}});
+
+
+var simulation = d3.forceSimulation(dataset)
+  .force("collide", d3.forceCollide()
+         .iterations(1)
+         .radius(10))
+  .force("charge", d3.forceManyBody().strength(-1))
+  .force("x", d3.forceX(width/2))
+  .force("y", d3.forceY(height/2))
+	.on("tick", ticked);;
+
+var cs = svg.selectAll("circle")
+	.data(dataset);
+
+var csEnter = cs.enter()
+	.append("circle")
+	.attr("r", 15)
+	.style("fill", function (i,d) {
+					if(i > answer) { return '#F9BA06'}
+					else {return '#2E2301'}});
+	// .attr("cx", function (d) {
+	// 	console.log(Math.abs(d.x*10))
+	// 	return Math.abs(d.x*10); })
+	// .attr("cy", function (d) { return Math.abs(d.y*10); });
+
+	// svg.append("g")
+	// 	.attr("class", "axis x")
+	// 	.style("display", "none")
+	// 	.call(d3.axisTop(xScale))
+		// .attr("transform", "translate(0,50)");
+
+
+	// Checkbox event
+	d3.select("#right_answer").on("change", function () {
+		// Modify the force x
+		simulation.force("x",
+			d3.event.target.checked ?
+				d3.forceX(function (d) {
+					console.log(d.group)
+					return xScale(d.group);
+		}).strength(0.3) :
+				d3.forceX(width/2)
+			);
+		// Show the axis
+		svg.select(".x.axis").style("display", d3.event.target.checked ? "block" : "none");
+		// Excite the simulation
+		simulation.alpha(0.3).restart();
+	});
+
+
+	function ticked() {
+	// Move the circles
+	csEnter.merge(cs)
+		.attr("cx", function (d) { return d.x; })
+		.attr("cy", function (d) { return d.y; });
+}
 
 
 var stepColor
@@ -38,84 +101,84 @@ function update(answer, stepColor){
 		else {var group = 2;}
 		dataset.push({r: 10, group: group})}
 
-	const people = svg.selectAll("circle").data(dataset);
+	// const people = svg.selectAll("circle").data(dataset);
 
 	if (stepColor==0){
-		people.enter().append('circle')
-		.attr("fill", '#00BFFF');
-
-		people.transition()
-		.attr("fill", '#00BFFF');
-
-		people.exit()
-		.remove()
+		// people.enter().append('circle')
+		// .attr("fill", '#00BFFF');
+		//
+		// people.transition()
+		// .attr("fill", '#00BFFF');
+		//
+		// people.exit()
+		// .remove()
 	}
 
 	if (stepColor==1){
-		people.enter().append('circle')
-		.attr("fill", function(d, i) {
-			if(i < answer) { return '#808080'}
-			else {return '#00BFFF'}});
-
-		people.transition()
-		.attr("fill", function(d, i) {
-			if(i < answer) { return '#808080'}
-			else {return '#00BFFF'}});
-
-		people.exit()
-		.remove()
+		// people.enter().append('circle')
+		// .attr("fill", function(d, i) {
+		// 	if(i < answer) { return '#808080'}
+		// 	else {return '#00BFFF'}});
+		//
+		// people.transition()
+		// .attr("fill", function(d, i) {
+		// 	if(i < answer) { return '#808080'}
+		// 	else {return '#00BFFF'}});
+		//
+		// people.exit()
+		// .remove()
 	}
 
 	if (stepColor==2){
-		people.enter().append('circle')
-		.attr("fill", '#3CB371');
-
-		people.transition()
-		.attr("fill", '#3CB371');
-
-		people.exit()
-		.remove()
+		// people.enter().append('circle')
+		// .attr("fill", '#3CB371');
+		//
+		// people.transition()
+		// .attr("fill", '#3CB371');
+		//
+		// people.exit()
+		// .remove()
 	}
 
 	if (stepColor==3){
-		people.enter().append('circle')
-		.attr("fill", function(d, i) {
-			if(i < answer) { return '#DC143C'}
-			else {return '#3CB371'}});
-
-		people.transition()
-		.attr("fill", function(d, i) {
-			if(i < answer) { return '#DC143C'}
-			else {return '#3CB371'}});
-
-		people.exit()
-		.remove()
+		// people.enter().append('circle')
+		// .attr("fill", function(d, i) {
+		// 	if(i < answer) { return '#DC143C'}
+		// 	else {return '#3CB371'}});
+		//
+		// people.transition()
+		// .attr("fill", function(d, i) {
+		// 	if(i < answer) { return '#DC143C'}
+		// 	else {return '#3CB371'}});
+		//
+		// people.exit()
+		// .remove()
 	}
 
 	if (stepColor==4){
-		people.enter().append('circle')
-		.attr("fill", '#DAA520');
-
-		people.transition()
-		.attr("fill", '#DAA520');
-
-		people.exit()
-		.remove()
+		// people.enter().append('circle')
+		// .attr("fill", '#DAA520');
+		//
+		// people.transition()
+		// .attr("fill", '#DAA520');
+		//
+		// people.exit()
+		// .remove()
 	}
 
 	if (stepColor==5){
-		people.enter().append('circle')
-		.attr("fill", function(d, i) {
-			if(i < answer) { return '#CD5C5C'}
-			else {return '#DAA520'}});
-
-		people.transition()
-		.attr("fill", function(d, i) {
-			if(i < answer) { return '#CD5C5C'}
-			else {return '#DAA520'}});
-
-		people.exit()
-		.remove()
+		// people.enter().append('circle')
+		// .attr("fill", function(d, i) {
+		// 	if(i < answer) { return '#CD5C5C'}
+		// 	else {return '#DAA520'}});
+		//
+		// people.transition()
+		// .attr("fill", function(d, i) {
+		// 	if(i < answer) { return '#CD5C5C'}
+		// 	else {return '#DAA520'}});
+		//
+		// people.exit()
+		// .remove()
 	}
 
 
@@ -188,7 +251,6 @@ function update(answer, stepColor){
 				return i === response.index;
 			})
 
-			console.log(answer)
 
 			// update graphic based on step
 			graphic.select('p').text(response.index + 1);
@@ -239,5 +301,3 @@ function update(answer, stepColor){
 
 		// kick things off
 		init();
-
-

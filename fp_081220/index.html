@@ -68,15 +68,51 @@
   <br><br>
 
   <!-- partial:index.partial.html -->
-  <!-- <section id='scroll'>
+  <section id='scroll'>
 		<div class='scroll__graphic sticky' id="side-vis">
+
 
 		</div>
 		<div class='scroll__text'>
 			<div class='step' data-step='1'>
-        <p style='color:#fffdf5; background-color: transparent; font-size: 50px;'>
-            How many would live without access to clean water?
-        </p>
+
+        <div class="question" background="transparent" >
+          If the world were a village of 100 people, how many would live on less than $1.9 a day?
+          <br><br>
+          <div class="row" style="background:transparent;">
+            <div class="col-sm-7" style="background:transparent;">
+
+              <input type="checkbox" id="right_answer"><label for="right_answer">Group by BEA Category</label>
+
+              <input onclick="check_answer(10, 10, 'q1result1', 'q1result'); show_animation('animation1', true, 10);"
+                class="q1choice" type="radio" id="q1option1" name="q1" value="10" id="right_answer"> 10
+              <span id="q1result1" class="q1result"></span>
+              <br>
+              <input onclick="check_answer(68, 10, 'q1result2', 'q1result'); show_animation('animation1', false, 10);"
+                class="q1choice" type="radio" id="q1option2" name="q1" value="68"> 5
+              <span id="q1result2" class="q1result"></span>
+              <br>
+              <input onclick="check_answer(53, 10, 'q1result3', 'q1result'); show_animation('animation1', false, 10);"
+                class="q1choice" type="radio" id="q1option3" name="q1" value="53"> 2
+              <span id="q1result3" class="q1result"></span>
+              <br>
+              <input onclick="check_answer(36, 10, 'q1result4', 'q1result'); show_animation('animation1', false, 10);"
+                class="q1choice" type="radio" id="q1option4" name="q1" value="36"> 9
+              <span id="q1result4" class="q1result"></span>
+              <br>
+              <input onclick="check_answer(84, 10, 'q1result5', 'q1result'); show_animation('animation1', false, 10);"
+                class="q1choice" type="radio" id="q1option5" name="q1" value="84"> 7
+              <span id="q1result5" class="q1result"></span>
+
+            </div>
+            <!-- <div class="col-sm-7">
+
+              <div id="animation1"></div>
+
+            </div> -->
+          </div>
+        </div>
+
 			</div>
 			<div class='step' data-step='2'>
         <br><br><br><br><br><br><br><br>
@@ -100,22 +136,11 @@
             How many would be hungry?
         </p>
 			</div>
-			<div class='step' data-step='6'>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <p style='color:#fffdf5; background-color: transparent; font-size: 55px; display: inline-block;'>
-            <b>13</b> would be hungry
-        </p>
-			</div>
 
 
 		</div>
 
-	</section> -->
+	</section>
   <!-- partial -->
 
   <!-- ///////////////////////////////////////
@@ -573,7 +598,6 @@
   <script src='https://russellgoldenberg.github.io/scrollama/stickyfill.min.js'></script>
   <script src="./script.js"></script>
   <script src="./question_script.js"></script>
-  <!-- <script  src="./script2.js"></script> -->
 
   <script type="text/javascript">
 

@@ -16,8 +16,8 @@ function check_answer(user_answer, correct_answer, result, choices_class) {
 }
 
 var image
-image.style.width = '50%';
-image.style.height = 'auto'
+// image.width = '50px';
+// image.height = '50px'
 
 function show_animation(animation_div_id, fill, correct_answer) {
     let animation_div = document.getElementById(animation_div_id);
@@ -27,12 +27,6 @@ function show_animation(animation_div_id, fill, correct_answer) {
             let br=document.createElement("br");
             animation_div.appendChild(br);
         }
-        // let person_div=document.createElement("div");
-        // person_div.classList.add("person_div");
-        // if (i < correct_answer && fill==true) {
-        //     person_div.classList.add("filled");
-        // }
-        // animation_div.appendChild(person_div);
 
         let person_img = document.createElement("img");
         person_img.classList.add("person");
