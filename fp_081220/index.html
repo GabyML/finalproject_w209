@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wealth Aware</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <!-- Navigation Menu -->
+  <div class="topnav">
+    <a href="#about">About</a>
+    <a href="#quiz">Take the Quiz</a>
+    <a href="#income">Income</a>
+    <a href="#water">Water</a>
+    <a href="#hunger">Hunger</a>
+    <a href="#education">Education</a>
+    <a href="#inclusion">Financial Inclusion</a>
+    <a href="#stories">Human Stories</a>
+  </div>
+
+<!-- Page Title in the Body -->
+  <div style="background: #fffdf5; height: 250px;">
+    <br><br><br><br>
+    <h1><b>Wealth Aware</b></h1>
+  </div>
+  <br><br><br><br>
+  <br><br><br><br>
+
+<!-- About Page -->
+  <a class="anchor" id="about"></a>
+  <div >
+    <h2><br>Welcome to <b>Wealth Aware</b>!</h2>
+    <h3>
+      This is <b>a tool to</b> help you <b>understand</b>, more and better, what does <b>poverty</b> really is today's world.<br><br>
+      For this, we combine a series of visualizations aimed to give you easy, enjoyable access to a large and complex set of data about poverty arond the world. <br><br>
+      Here you will be able to either <b>test your current knowledge of poverty</b> with an <a href="#quiz" style='color:#E0AE02'><b>interactive quiz</b></a>, <b>or to
+      learn more about the implications of poverty in</b> topics like household <a href="#income" style='color:#E0AE02'><b>income</b></a>,
+      access to <a href="#water" style='color:#E0AE02'><b>water</b></a>, levels of <a href="#hunger" style='color:#E0AE02'><b>hunger</b></a>,
+      <a href="#education" style='color:#E0AE02'><b>education</b></a> and finantial <a href="#inclusion" style='color:#E0AE02'><b>inclusion</b></a>
+      around the world.<br><br>
+      And because data is much more than just numbers, you can also watch real life stories of <a href="#stories" style='color:#E0AE02'><b>people sharing their experience</b></a>
+      of living under this conditions.<br><br>
+      This site was made to fulfill the requirements of <a href="https://www.ischool.berkeley.edu/courses/datasci/209" style='color:#0202E0'><b>W209</b></a>: Data Visualization and Communication,
+      as part of the <a href="https://www.ischool.berkeley.edu/courses/datasci/209" style='color:#0202E0'><b>MIDS</b></a> program at UC Berkeley.<br><br>
+      For further information regarding this project, feedback, or anything related to this page, please contact the authors:
+      <a style='color:#E0AE02'><b>Priscilla</b></a> (burityp@berkeley.edu),
+      <a href="https://www.ischool.berkeley.edu/people/anil-inamdar#profile-main" style='color:#E0AE02'><b>Anil</b></a> (ai2084@ischool.berkeley.edu) or
+      <a href="https://www.ischool.berkeley.edu/people/gabriela-may-lagunes" style='color:#E0AE02'><b>Gaby</b></a> (g.maylagunes@berkeley.edu)
+
+   </h3>
+  </div>
+
+  <h2>Scroll down to find out <b>how much</b> do you really know about <b>poverty</b> around the world.</h2>
+
+
+<!-- Quiz Page -->
+  <a class="anchor" id="quiz"></a>
+  <br>
+  <h2> If the <b>world</b> were a village of <b>100 people...</b></h2>
+  <br><br>
+
+  <!-- partial:index.partial.html -->
+  <!-- <section id='scroll'>
+		<div class='scroll__graphic sticky' id="side-vis">
+
+		</div>
+		<div class='scroll__text'>
+			<div class='step' data-step='1'>
+        <p style='color:#fffdf5; background-color: transparent; font-size: 50px;'>
+            How many would live without access to clean water?
+        </p>
+			</div>
+			<div class='step' data-step='2'>
+        <br><br><br><br><br><br><br><br>
+        <p style='color:#fffdf5; background-color: transparent; font-size: 50px; display: inline-block;'>
+            <b>11</b> live without clean water...
+        </p>
+			</div>
+      <div class='step' data-step='3'>
+        <p style='color:#fffdf5; background-color: transparent; font-size: 50px;'>
+            How many would live on less than $2 a day?
+        </p>
+			</div>
+			<div class='step' data-step='4'>
+        <br><br><br><br><br><br><br><br><br><br>
+        <p style='color:#fffdf5; background-color: transparent; font-size: 50px; display: inline-block;'>
+            <b>9</b> live on less than $2 a day
+        </p>
+			</div>
+      <div class='step' data-step='5'>
+        <p style='color:#fffdf5; background-color: transparent; font-size: 50px;'>
+            How many would be hungry?
+        </p>
+			</div>
+			<div class='step' data-step='6'>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <p style='color:#fffdf5; background-color: transparent; font-size: 55px; display: inline-block;'>
+            <b>13</b> would be hungry
+        </p>
+			</div>
+
+
+		</div>
+
+	</section> -->
+  <!-- partial -->
+
+  <!-- ///////////////////////////////////////
+////////// ADD QUIZ HERE!!!!!/////////
+
+
+////////////////////////////////////// -->
+  <div class="container p-0" style="background:transparent;">
+
+    <!-- Question 1 -->
+
+    <div class="question" style="background:transparent;">
+      If the world were a village of 100 people, how many would live on less than $1.9 a day?
+      <br><br>
+      <div class="row" style="background:transparent;">
+        <div class="col-sm-5">
+
+          <input onclick="check_answer(10, 10, 'q1result1', 'q1result'); show_animation('animation1', true, 10);"
+            class="q1choice" type="radio" id="q1option1" name="q1" value="10" style="background:transparent;"> 10
+          <span id="q1result1" class="q1result"></span>
+          <br>
+          <input onclick="check_answer(68, 10, 'q1result2', 'q1result'); show_animation('animation1', false, 10);"
+            class="q1choice" type="radio" id="q1option2" name="q1" value="68"> 5
+          <span id="q1result2" class="q1result"></span>
+          <br>
+          <input onclick="check_answer(53, 10, 'q1result3', 'q1result'); show_animation('animation1', false, 10);"
+            class="q1choice" type="radio" id="q1option3" name="q1" value="53"> 2
+          <span id="q1result3" class="q1result"></span>
+          <br>
+          <input onclick="check_answer(36, 10, 'q1result4', 'q1result'); show_animation('animation1', false, 10);"
+            class="q1choice" type="radio" id="q1option4" name="q1" value="36"> 9
+          <span id="q1result4" class="q1result"></span>
+          <br>
+          <input onclick="check_answer(84, 10, 'q1result5', 'q1result'); show_animation('animation1', false, 10);"
+            class="q1choice" type="radio" id="q1option5" name="q1" value="84"> 7
+          <span id="q1result5" class="q1result"></span>
+
+        </div>
+        <div class="col-sm-7">
+
+          <div id="animation1"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+
+    <div class="question">
+
+      If the world were a village of 100 people, how many would live without access to clean water?
+      <br><br>
+      <div class="row">
+        <div class="col-sm-5">
+
+          <input onclick="check_answer(1, 11, 'q2result1', 'q2result'); show_animation('animation2', false, 11);"
+            class="q2choice" type="radio" id="q2option1" name="q2" value="1"> 1
+          <span id="q2result1" class="q2result"></span>
+          <br>
+          <input onclick="check_answer(11, 11, 'q2result2', 'q2result'); show_animation('animation2', true, 11);"
+            class="q2choice" type="radio" id="q2option2" name="q2" value="11"> 11
+          <span id="q2result2" class="q2result"></span>
+          <br>
+          <input onclick="check_answer(43, 11, 'q2result3', 'q2result'); show_animation('animation2', false, 11);"
+            class="q2choice" type="radio" id="q2option3" name="q2" value="43"> 9
+          <span id="q2result3" class="q2result"></span>
+          <br>
+          <input onclick="check_answer(31, 11, 'q2result4', 'q2result'); show_animation('animation2', false, 11);"
+            class="q2choice" type="radio" id="q2option4" name="q2" value="31"> 13
+          <span id="q2result4" class="q2result"></span>
+          <br>
+          <input onclick="check_answer(78, 11, 'q2result5', 'q2result'); show_animation('animation2', false, 11);"
+            class="q2choice" type="radio" id="q2option5" name="q2" value="78"> 7
+          <span id="q2result5" class="q2result"></span>
+
+        </div>
+        <div class="col-sm-7">
+
+          <div id="animation2"></div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- Question 3 -->
+
+    <div class="question">
+      If the world were a village of 100 people, how many would be hungry or malnourished?
+      <br><br>
+      <div class="row">
+        <div class="col-sm-5">
+
+          <input onclick="check_answer(4, 13, 'q3result1', 'q3result'); show_animation('animation3', false, 13);"
+            class="q3choice" type="radio" id="q3option1" name="q3" value="4"> 5
+          <span id="q3result1" class="q3result"></span>
+          <br>
+          <input onclick="check_answer(52, 13, 'q3result2', 'q3result'); show_animation('animation3', false, 13);"
+            class="q3choice" type="radio" id="q3option2" name="q3" value="52"> 9
+          <span id="q3result2" class="q3result"></span>
+          <br>
+          <input onclick="check_answer(41, 13, 'q3result3', 'q3result'); show_animation('animation3', false, 13);"
+            class="q3choice" type="radio" id="q3option3" name="q3" value="41"> 10
+          <span id="q3result3" class="q3result"></span>
+          <br>
+          <input onclick="check_answer(13, 13, 'q3result4', 'q3result'); show_animation('animation3', true, 13);"
+            class="q3choice" type="radio" id="q3option4" name="q3" value="13"> 13
+          <span id="q3result4" class="q3result"></span>
+          <br>
+          <input onclick="check_answer(60, 13, 'q3result5', 'q3result'); show_animation('animation3', false, 13);"
+            class="q3choice" type="radio" id="q3option5" name="q3" value="60"> 15
+          <span id="q3result5" class="q3result"></span>
+
+        </div>
+        <div class="col-sm-7">
+
+          <div id="animation3"></div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+
+    <div class="question">
+      If the world were a village of 100 children, how many would be out of school?
+      <br><br>
+      <div class="row">
+        <div class="col-sm-5">
+
+          <input onclick="check_answer(3, 8, 'q4result1', 'q4result'); show_animation('animation4', false, 8);"
+            class="q4choice" type="radio" id="q4option1" name="q4" value="3"> 3
+          <span id="q4result1" class="q4result"></span>
+          <br>
+          <input onclick="check_answer(12, 8, 'q4result2', 'q4result'); show_animation('animation4', false, 8);"
+            class="q4choice" type="radio" id="q4option2" name="q4" value="12"> 2
+          <span id="q4result2" class="q4result"></span>
+          <br>
+          <input onclick="check_answer(36, 8, 'q4result3', 'q4result'); show_animation('animation4', false, 8);"
+            class="q4choice" type="radio" id="q4option3" name="q4" value="36"> 1
+          <span id="q4result3" class="q4result"></span>
+          <br>
+          <input onclick="check_answer(8, 8, 'q4result4', 'q4result'); show_animation('animation4', true, 8);"
+            class="q4choice" type="radio" id="q4option4" name="q4" value="8"> 8
+          <span id="q4result4" class="q4result"></span>
+          <br>
+          <input onclick="check_answer(62, 8, 'q4result5', 'q4result'); show_animation('animation4', false, 8);"
+            class="q4choice" type="radio" id="q4option5" name="q4" value="62"> 5
+          <span id="q4result5" class="q4result"></span>
+
+        </div>
+        <div class="col-sm-7">
+
+          <div id="animation4"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+
+    <div class="question">
+      If the world were a village of 100 people, how many would not have a bank account?
+      <br><br>
+      <div class="row">
+        <div class="col-sm-5">
+
+          <input onclick="check_answer(8, 31, 'q5result1', 'q5result'); show_animation('animation5', false, 31);"
+            class="q5choice" type="radio" id="q5option1" name="q5" value="8"> 8
+          <span id="q5result1" class="q5result"></span>
+          <br>
+          <input onclick="check_answer(24, 31, 'q5result2', 'q5result'); show_animation('animation5', false, 31);"
+            class="q5choice" type="radio" id="q5option2" name="q5" value="24"> 17
+          <span id="q5result2" class="q5result"></span>
+          <br>
+          <input onclick="check_answer(72, 31, 'q5result3', 'q5result'); show_animation('animation5', false, 31);"
+            class="q5choice" type="radio" id="q5option3" name="q5" value="72"> 15
+          <span id="q5result3" class="q5result"></span>
+          <br>
+          <input onclick="check_answer(12, 31, 'q5result4', 'q5result'); show_animation('animation5', false, 31);"
+            class="q5choice" type="radio" id="q5option4" name="q5" value="12"> 20
+          <span id="q5result4" class="q5result"></span>
+          <br>
+          <input onclick="check_answer(31, 31, 'q5result5', 'q5result'); show_animation('animation5', true, 31);"
+            class="q5choice" type="radio" id="q5option5" name="q5" value="31"> 31
+          <span id="q5result5" class="q5result"></span>
+
+        </div>
+        <div class="col-sm-7">
+
+          <div id="animation5"></div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br>
+  <br><br>
+
+  <h2><b> Ready to learn more? Keep scrolling!</b></h2>
+
+<!-- Income Page -->
+  <a class="anchor" id="income"></a>
+  <br>
+
+  <h2 style='color:#B71D3E;'>Now let's learn more about <b>income</b></h2>
+
+
+  <h3> Use the dashboard below to find out the fraction of the population per country that currently <b style='color:#B71D3E;'> live with less than 1.9 USD a day.</b> You can also learn more about their gender, age and where they live.</h3>
+
+
+<div class='tableauPlaceholder' id='viz1607432482447' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_9_1&#47;ShareofPoorDetails2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='1_9_1&#47;ShareofPoorDetails2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_9_1&#47;ShareofPoorDetails2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1607432482447');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='577px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='577px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  <br><br>
+
+  <div class='tableauPlaceholder' id='viz1607433721699' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_9_2&#47;ShareofPoorDetails3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='1_9_2&#47;ShareofPoorDetails3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_9_2&#47;ShareofPoorDetails3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1607433721699');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='577px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='577px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  </div>
+  <p>Data Source: <a href="https://data.worldbank.org" style='color:#E0AE02'><b>World Bank</b></a></p>
+  <br><br>
+  <h3> <b style='color:#B71D3E;'> Challenge Time!</b> Use the dashboards above to: <br><br>
+    1) See which countries in the world have half or more of their population living in under 1.9 USD a day.<br>
+    2) Figure out what percentage of women live with under $2 USD in your country. </h3>
+
+
+  <br><br>
+  <br><br>
+  <br><br>
+
+  <!-- Water Page -->
+    <a class="anchor" id="water"></a>
+    <br>
+
+  <h2 style='color:#009ECF;'>Let's talk about <b>water access</b></h2>
+
+  <h3> Find out the fraction of the population per country that currently have <b style='color:#009ECF;'>no access
+      to clean drinking water and other basic services.</b></h3>
+
+
+  <div class='tableauPlaceholder' id='viz1606666988995' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wa&#47;water_16056381965010&#47;Waterdasboard2&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='water_16056381965010&#47;Waterdasboard2' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wa&#47;water_16056381965010&#47;Waterdasboard2&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' />
+      <param name='filter' value='publish=yes' /></object></div>
+  <script
+    type='text/javascript'>                    var divElement = document.getElementById('viz1606666988995'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '677px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '677px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  </div>
+  <p>Data Source: <a href="https://data.worldbank.org" style='color:#E0AE02'><b>World Bank</b></a></p>
+  <br><br>
+  <h3> <b style='color:#009ECF;'> Challenge Time!</b> Use the dashboard above to: <br><br>
+    1) Find the country in the world with the largest percentage of population without access to drinking water. </h3>
+
+
+  <br><br>
+  <br><br>
+  <br><br>
+
+  <!-- Hunger Page -->
+    <a class="anchor" id="hunger"></a>
+    <br>
+
+
+  <h2 style='color:#DAA520;'>Hungry for more? <br> Check out how many live in actual <b>hunger in the world</b></h2>
+
+  <h3> You can use the dashboard below to find out the fraction of the population per country that are currently
+    <b style='color:#DAA520;'>undernourished.</b> You can also learn more <b style='color:#DAA520;'> prevailing issues with children</b> related to hunger.</h3>
+
+
+  <div class='tableauPlaceholder' id='viz1607328932737' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hu&#47;hunger1&#47;hungerdashboard1&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='hunger1&#47;hungerdashboard1' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hu&#47;hunger1&#47;hungerdashboard1&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' />
+      <param name='filter' value='publish=yes' /></object></div>
+  <script
+    type='text/javascript'>                    var divElement = document.getElementById('viz1607328932737'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '677px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '677px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  <br><br>
+
+  <div class='tableauPlaceholder' id='viz1607326263611' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hu&#47;hunger2&#47;hungerdashboard2&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='hunger2&#47;hungerdashboard2' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hu&#47;hunger2&#47;hungerdashboard2&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' />
+      <param name='filter' value='publish=yes' /></object></div>
+  <script
+    type='text/javascript'>                    var divElement = document.getElementById('viz1607326263611'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '427px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '427px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  </div>
+  <p>Data Source: <a href="https://www.globalhungerindex.org/download/all.html" style='color:#E0AE02'><b>The Global Hunger Index</b></a></p>
+  <br><br>
+  <h3> <b style='color:#DAA520;'> Challenge Time!</b> Use the dashboards above to: <br><br>
+    1) Find the hungriest country in your continent. <br>
+    2) Learn which country has the biggest percentage of stunting children in its population. </h3>
+
+
+
+  <br><br>
+  <br><br>
+  <br><br>
+
+  <!-- Education Page -->
+    <a class="anchor" id="education"></a>
+    <br>
+
+  <h2 style='color:#B07AA1;'>What about <b > education? </b> </h2>
+
+  <h3> Having education <b style='color:#B07AA1;'> helps people
+  think, feel, and behave </b> in a way that contributes to their success, and improves not only
+  their <b style='color:#B07AA1;'> personal satisfaction </b> but also their <b style='color:#B07AA1;'> community.</b> <br><br>
+  Learn about the <b style='color:#B07AA1;'> fraction of children </b> at school age that are currently
+    <b style='color:#B07AA1;'>out of scholl</b> by country. You can also find out the gender breakdown of these children.</h3>
+
+
+
+
+  <div class='tableauPlaceholder' id='viz1607447475069' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ed&#47;education_16073267590460&#47;Outofschool&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='education_16073267590460&#47;Outofschool' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ed&#47;education_16073267590460&#47;Outofschool&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1607447475069');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='677px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='677px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  <p>Data Source: <a href="https://data.worldbank.org" style='color:#E0AE02'><b>World Bank</b></a></p>
+  <br><br>
+  <h3> <b style='color:#B07AA1;'> Challenge Time!</b> Use the dashboards above to: <br><br>
+    1) Find the country in the world with the largest percentage of population children out of school. </h3>
+
+  <br><br>
+  <br><br>
+  <br><br>
+
+  <!-- Finantial Inclusion Page -->
+    <a class="anchor" id="inclusion"></a>
+    <br>
+
+  <h2 style='color:#24693D;'> <b > Financial inclusion </b> is also a key driver for attaining social inclusion. </h2>
+
+  <h3> Financial inclusion helps individuals to <b style='color:#24693D;'> make  daily payments</b> reliably,
+  <b style='color:#24693D;'> access credit </b> which can be invested in their income-generating activities, and also
+  helps people <b style='color:#24693D;'> save their cash </b> so that they can make <b style='color:#24693D;'> future investments </b> or respond to <b style='color:#24693D;'> unforeseeable risks</b>.
+
+</h3>
+
+
+  <h3> Discover the <b style='color:#24693D;'> fraction of people </b> that currently
+    <b style='color:#24693D;'>do not have a bank account </b> by country. You can also learn about about the reasons why they don't have an acoount.</h3>
+
+
+
+  <div class='tableauPlaceholder' id='viz1607329100646' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;bankaccount&#47;bankaccount&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='bankaccount&#47;bankaccount' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ba&#47;bankaccount&#47;bankaccount&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' />
+      <param name='filter' value='publish=yes' /></object></div>
+  <script
+    type='text/javascript'>                    var divElement = document.getElementById('viz1607329100646'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '727px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '727px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '827px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <p>Data Source: <a href="https://data.worldbank.org" style='color:#E0AE02'><b>World Bank</b></a></p>
+    <br><br>
+    <h3> <b style='color:#24693D;'> Challenge Time!</b> Use the dashboards above to: <br><br>
+      1) Find the main reason why people still do not have bank accounts in Mexico and Brazil. </h3>
+
+  <br><br>
+  <br><br>
+  <br><br>
+
+  <!-- Stories Page -->
+    <a class="anchor" id="stories"></a>
+    <br>
+
+  <h2>But what does it actually mean to live under these conditions?</h2>
+
+  <h3>Watch the <a style='color:#E0AE02'><b>stories</b></a> of some <a style='color:#E0AE02'><b>of the people</b></a> that endure this every day.</h3>
+  <br><br><br>
+
+  <div id="contentframe" style="position:relative;">
+
+    <h4>"Ndikumana Gervais is a fisherman from Rwanda who lives on less than $2 a day. With help from a local microsaving organization and continuous hard work,
+    he is hopeful that he can soon give his children a better life". Description and Story taken from the
+    <a href="https://www.facebook.com/BillGates/posts/10156453199011961" style='color:#E0AE02'><b>GatesFoundation</b></a></h4>
+    <iframe width="651" height="366" src="https://www.youtube.com/embed/irKmkBI8zhw" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+      <br>
+    <h4>"For the last 15 years, Lal Mohammed has worked as a rickshaw puller in Kolkata, India. In rubber sandals and shorts, he ferries passengers and packages
+    through the city streets, earning less than $2 a day. He supports his wife and three children with his small income. But he and his wife have big dreams
+    for their children, hoping that they will grow up and get an education and a higher paying job than he has". Description and Story taken from the
+    <a href="https://www.youtube.com/watch?v=-lkC8FByvAw&list=LLJJE6dRLzoeY0NJmQ_IJ81A&index=425" style='color:#E0AE02'><b>GatesFoundation</b></a></h4>
+    <iframe width="651" height="366" src="https://www.youtube.com/embed/-lkC8FByvAw" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+      <br>
+    <h4>"Awoke Mose is a smallholder farmer in Work Amba, Ethiopia who grows teff, wheat, chickpeas and maize. He, his wife, five children,
+    and his mother all live the same one-hectare plot. He saves whatever money he can for his children’s education. His oldest daughter
+    recently graduated from college". Description and Story taken from
+    <a href="https://www.youtube.com/watch?v=UzbKzVVrFHw&feature=emb_title" style='color:#E0AE02'><b>GatesFoundation</b></a></h4>
+    <iframe width="651" height="366" src="https://www.youtube.com/embed/UzbKzVVrFHw" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+
+
+  <script src='https://unpkg.com/scrollama@0.6.1/build/scrollama.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.0/d3.min.js'></script>
+  <script src='https://russellgoldenberg.github.io/scrollama/stickyfill.min.js'></script>
+  <script src="./script.js"></script>
+  <script src="./question_script.js"></script>
+  <!-- <script  src="./script2.js"></script> -->
+
+  <script type="text/javascript">
+
+    show_animation("animation1", false, 18);
+    show_animation("animation2", false, 9);
+    show_animation("animation3", false, 13);
+    show_animation("animation4", false, 7);
+    show_animation("animation5", false, 7);
+
+  </script>
+
+  <br><br>
+  <br><br>
